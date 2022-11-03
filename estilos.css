@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    font-family: 'Shalimar', cursive;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0 1rem 0 1rem;
+    border-bottom: 1.5px solid #d59c1f;
+    -webkit-box-shadow: 0px 8px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 8px 11px -1px rgba(0,0,0,0.75);
+    font-size: 2rem;
+}
+h1{
+    margin: 0;
+}
+.puntuacion{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#container-padre{
+    display: flex;
+    border: 2px solid #d59c1f88;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    width: 80%;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.contenedores-premios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    color: white;
+    font-size: 2rem;
+}
+#container-padre div:first-of-type{
+    align-self: stretch;
+    justify-content: space-between;
+}
+.contenedores-premios img{
+    max-width: 170px;
+}
+.contenedores-premios h2{
+    margin-bottom: 0;
+}
+.oculto{
+   display: none;
+}
+.premio-grande{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedores-premios button{
+    cursor: pointer;
+    padding: 0.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    background-color: #d59c1f;
+    border: none;
+}
