@@ -55,7 +55,7 @@ main{
     justify-content: space-between;
 }
 .contenedores-premios img{
-    max-width: 170px;
+    max-width: 200px;
 }
 .contenedores-premios h2{
     margin-bottom: 0;
@@ -76,4 +76,18 @@ main{
     font-size: 1.5rem;
     background-color: #d59c1f;
     border: none;
+}
+#contenedor-aku{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#monedas-conteo{
+    font-size: 1.3em;
+}
+#akus-conteo{
+    font-size: 1.3em;
+}
+.contenedores-premios #silmaril{
+    width: 80%;
 }

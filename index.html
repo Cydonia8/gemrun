@@ -19,18 +19,23 @@
     <main>
         <div id="container-padre">
             <div class="contenedores-premios">
-                <h2>Hazte con el oro azteca</h2>
+                <h2>Hazte con el oro azteca y gana 10 puntos</h2>
                 <img src="oro-azteca.png" alt="">
                 <button id="btn-oro">Coger una moneda</button>
+                <span id="monedas-conteo">Monedas recogidas: 0</span>
             </div>
             <div class="contenedores-premios">
-                <h2>¡Atrapa a AkuAku!</h2>
-                <img src="akuaku.png" alt="">
-                <button id="btn-aku">¡Te tengo!</button>
+                <h2>¡Atrapa a AkuAku 5 veces para el tesoro secreto!</h2>
+                <div id="contenedor-aku">
+                    <img src="akuaku.png" alt="">
+                    <button id="btn-aku">¡Te tengo!</button>
+                    <span id="akus-conteo">Akus atrapados: 0</span>
+                </div>
             </div>
             <div class="contenedores-premios oculto">
-                <h2>Consigue la piedra</h2>
-                <img src="piedra.png" alt="">
+                <h2>¡Descubriste un silmaril perdido!</h2>
+                <img id="silmaril" src="silmaril.png" alt="">
+                <a href="https://www.youtube.com/watch?v=DKP16d_WdZM"><button id="final">Descubre el siguiente paso del camino...</button></a>
             </div>
         </div>
     </main>
