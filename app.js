@@ -59,6 +59,9 @@ final.addEventListener("click", ()=>{
     }else{
         audio_final.play();
         foto_silmaril.setAttribute("src", "./gandalf.gif");
-        final.innerText="¡Enhorabuena!";
+        final.innerText="¡Enhorabuena! ¡Ganas 1000 puntos! Aquí termina tu camino";
+        puntuacion_total+=1000;
+        marcador.innerText=`Puntuacion: ${puntuacion_total}`;
+        final.setAttribute("disabled", true);
     }
 })

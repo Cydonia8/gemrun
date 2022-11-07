@@ -67,7 +67,8 @@ main{
     width: 33%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: stretch;
+    justify-content: space-around;
 }
 .contenedores-premios button{
     cursor: pointer;
@@ -90,4 +91,11 @@ main{
 }
 .contenedores-premios #silmaril{
     width: 80%;
+}
+#texto-final{
+    padding: 0.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    background-color: #d59c1f;
+    border: none;
 }
