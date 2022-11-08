@@ -5,9 +5,9 @@ let conteo_monedas = 0;
 let akus_atrapados = 0;
 
 //Constantes para manejar eventos
-const audio_aku = new Audio('./akusound.mp3');
-const audio_moneda = new Audio('./moneda.mp3');
-const audio_final = new Audio('./hobbits.mp3');
+const audio_aku = new Audio('media/audio/akusound.mp3');
+const audio_moneda = new Audio('media/audio/moneda.mp3');
+const audio_final = new Audio('media/audio/hobbits.mp3');
 const btn_aku = document.getElementById("btn-aku");
 const foto_silmaril = document.getElementById("silmaril");
 const btn_oro = document.getElementById("btn-oro");
@@ -60,7 +60,7 @@ final.addEventListener("click", ()=>{
         oculto.classList.add("oculto");
     }else{
         audio_final.play();
-        foto_silmaril.setAttribute("src", "./gandalf.gif");
+        foto_silmaril.setAttribute("src", "media/img/gandalf.gif");
         final.innerText="¡Enhorabuena! ¡Ganas 1000 puntos! Aquí termina tu camino";
         puntuacion_total+=1000;
         marcador.innerText=`Puntuacion: ${puntuacion_total}`;
