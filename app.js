@@ -16,6 +16,7 @@ const oculto = document.querySelector(".oculto");
 const monedas_totales = document.getElementById("monedas-conteo");
 const akus_totales = document.getElementById("akus-conteo");
 const final = document.getElementById("final");
+
 //Constantes y evento usados para mover de posición los akus;
 const posiciones_aku = ["flex-end", "flex-start","center"];
 const contenedor_aku = document.getElementById("contenedor-aku");
@@ -46,11 +47,12 @@ btn_aku.addEventListener("click", ()=>{
     
 })
 
-
+//Evento para mover el aku cuando se pasa por encima
 btn_aku.addEventListener("mouseenter", ()=>{
     contenedor_aku.style.alignItems=posiciones_aku[Math.floor(Math.random() * (posiciones_aku.length-0))];
 })
 
+//Evento para controlar las acciones cuando se pulsa el botón final
 final.addEventListener("click", ()=>{
     if(!confirm("¿Seguro que estás dispuesto a dar el paso final? Si te echas atrás, no tendrás mas oportunidades")){
         alert("Morirás sin saber qué hay más allá...");
